@@ -1,0 +1,33 @@
+{
+    "name": "Nome da Disciplina - Moodle UTFPR",
+    "description": "Transforma o código da disciplina em nome na barra de navegação do Moodle.",
+    "version": "1.0",
+    "author": "@caiomiglioli",
+    "manifest_version": 3,
+
+    "permissions": ["activeTab", "scripting"],
+    "icons": {
+        "16": "moodle.png",
+        "24": "moodle.png",
+        "32": "moodle.png",
+        "48": "moodle.png",
+        "128": "moodle.png"
+    },
+
+    "host_permissions": [
+        "http://moodle.utfpr.edu.br/",
+        "https://moodle.utfpr.edu.br/"
+    ],
+
+    "content_scripts": [
+        {
+            "matches": ["https://moodle.utfpr.edu.br/*", "https://moodle.utfpr.edu.br/*"],
+            "js": ["contentScript.js"]
+        }
+    ],
+
+    "action": {
+        "default_icon": "moodle.png",
+        "default_popup": "popup.html"
+    }
+}

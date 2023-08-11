@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome da Disciplina - Moodle UTFPR</title>
+
+    <style>
+        body {
+            width: 150px;
+            color: #333;
+        }
+
+        .col {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .divider {
+            border-top: 1px solid #ccc;
+            width: 100%;
+        }
+
+        .footer {
+            border-top: solid 0px #ccc;
+            gap: 10px
+        }
+
+        .footer > a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .footer > a:hover {
+            color: #FF8C00;
+        }
+
+        .button {
+            all: unset;
+            display: flex;
+            justify-content: center;
+            background-color: #FF8C00;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        .button:hover {
+            color:#ccc;
+            background-color: #333;
+            cursor: pointer            
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="col">
+        <div class="row">
+            <img src="moodle.png" alt="Moodle Logo" height="50px">
+            <h3>Alterar Nome da Disciplina</h3>
+        </div>
+
+        <div class="row">
+            <button class="button"><b>REVERTER</b></button>
+        </div>
+
+        <hr class="divider">
+
+        <div class="row footer">
+            <img src="github.png" alt="Github Logo" height="20px">
+            <a href="https://github.com/caiomiglioli" target="_blank">@caiomiglioli</a>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>

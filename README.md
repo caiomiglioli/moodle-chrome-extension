@@ -1,2 +1,6 @@
 # moodle-chrome-extension
-Extensão do Chrome para facilitar a navegabilidade entre as disciplinas do Moodle da UTFPR
+Extensão para facilitar a navegação de disciplinas no Moodle. \
+Funciona somente com o Moodle da UTFPR
+
+Como instalar extensões não compactadas: \
+https://developer.chrome.com/docs/extensions/mv3/getstarted/development-basics/#load-unpacked
